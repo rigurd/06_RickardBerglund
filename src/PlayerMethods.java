@@ -5,11 +5,13 @@ import jaco.mp3.player.MP3Player;
 
 public class PlayerMethods implements PlayerInterface{
 	
+	// Attributes, Mp3 instantiated as new object
 	private MP3Player mp3 = new MP3Player();
 	private String fileName = "";
 
 
 	public void open() {
+		
 		try{
 		JFileChooser filechooser = new JFileChooser();
 		int result = filechooser.showOpenDialog(null);
