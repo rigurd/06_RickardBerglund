@@ -1,6 +1,9 @@
+package classes;
 
 import java.io.File;
 import javax.swing.JFileChooser;
+
+import interfaces.PlayerInterface;
 import jaco.mp3.player.MP3Player;
 
 public class PlayerMethods implements PlayerInterface{
@@ -14,7 +17,7 @@ public class PlayerMethods implements PlayerInterface{
 		
 		try{
 		JFileChooser filechooser = new JFileChooser();
-		int result = filechooser.showOpenDialog(null);
+		filechooser.showOpenDialog(null);
 		File selectedFile = filechooser.getSelectedFile();
 		stop();
 		this.fileName = selectedFile.getName().toString();

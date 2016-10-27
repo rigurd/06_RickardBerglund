@@ -1,4 +1,8 @@
+package main;
+
 import java.awt.EventQueue;
+
+import gui.ViewClass;
 
 public class Main extends ViewClass{
 
