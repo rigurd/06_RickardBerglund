@@ -4,6 +4,14 @@ import java.awt.EventQueue;
 
 import gui.ViewClass;
 
+/**
+ * 
+ * @author Rickard Berglund
+ * @since 2016-10/27
+ * @version 1.0
+ * 
+ */
+
 public class Main extends ViewClass{
 
 	public static void main(String[] args) {

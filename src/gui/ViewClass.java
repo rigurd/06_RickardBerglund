@@ -11,6 +11,14 @@ import java.awt.Color;
 import classes.PlayerMethods;
 
 
+/**
+ * 
+ * @author Rickard Berglund
+ * @since 2016-10/27
+ * @version 1.0
+ * 
+ */
+
 public class ViewClass extends PlayerMethods{
 
 	public JFrame frmMpPlayer;
@@ -18,14 +26,18 @@ public class ViewClass extends PlayerMethods{
 
 
 	/**
-	 * Create the application.
+	 * This application is a simple Mp3 player that allows you to open .mp3 files
+	 * and play them, also features a play, resume and a stop button so that you can pause
+	 * resume and stop your music.
 	 */
 	public ViewClass() {
 		initialize();
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Within this method exists the GUI. It includes visual settings for the Application
+	 * aswell as everything that is included in the user interface part of the .exe file
+	 * 
 	 */
 	private void initialize() {
 		

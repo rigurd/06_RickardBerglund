@@ -2,10 +2,17 @@ package classes;
 
 import java.io.File;
 import javax.swing.JFileChooser;
-
 import interfaces.PlayerInterface;
 import jaco.mp3.player.MP3Player;
 
+	/**
+	 * 
+	 * @author Rickard Berglund
+	 * @since 2016-10/27
+	 * @version 1.0
+	 * 
+	 */
+	
 public class PlayerMethods implements PlayerInterface{
 	
 	// Attributes, Mp3 instantiated as new object
@@ -13,8 +20,11 @@ public class PlayerMethods implements PlayerInterface{
 	private String fileName = "";
 
 
-	public void open() {
-		
+	/**
+	 * This method requests you to open and choose an .mp3 file
+	 * then automatically plays it 
+	 */
+	public void open() { 
 		try{
 		JFileChooser filechooser = new JFileChooser();
 		filechooser.showOpenDialog(null);
@@ -29,6 +39,10 @@ public class PlayerMethods implements PlayerInterface{
 		
 	}
 
+	/**
+	 * This method requests you to open and choose a .mp3 file if none has been chosen yet
+	 * If one is already chosen, it plays it.
+	 */
 	public void play() {
 		if (fileName == ""){
 			open();
@@ -37,27 +51,45 @@ public class PlayerMethods implements PlayerInterface{
 		}
 	}
 
+	/**
+	 * This method pauses the ongoing .mp3 file
+	 */
 	public void pause() {	
 		mp3.pause();
 	}
 
+	/**
+	 * This methods stops the ongoing .mp3 file
+	 */
 	public void stop() {
 		mp3.stop();
 	}
 	
 	
+	/**
+	 * @return getFileName
+	 */
 	public String getFileName() {
 		return fileName;
 	}
 
+	/**
+	 * @param setFileName
+	 */
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
 	
+	/**
+	 * @return getMp3
+	 */
 	public MP3Player getMp3() {
 		return mp3;
 	}
 
+	/**
+	 * @param setMp3
+	 */
 	public void setMp3(MP3Player mp3) {
 		this.mp3 = mp3;
 	}
