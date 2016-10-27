@@ -10,6 +10,8 @@ import gui.ViewClass;
  * @since 2016-10/27
  * @version 1.0
  * 
+ * This package includes the main methods where we run the program
+ * 
  */
 
 public class Main extends ViewClass{

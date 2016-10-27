@@ -17,6 +17,9 @@ import classes.PlayerMethods;
  * @since 2016-10/27
  * @version 1.0
  * 
+ * This package includes the class ViewClass that extends from PlayerMethods
+ * this class contains the GUI
+ * 
  */
 
 public class ViewClass extends PlayerMethods{

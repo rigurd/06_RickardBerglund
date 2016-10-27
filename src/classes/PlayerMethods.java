@@ -11,6 +11,8 @@ import jaco.mp3.player.MP3Player;
 	 * @since 2016-10/27
 	 * @version 1.0
 	 * 
+	 * This package includes the class PlayerMethods that implements PlayerInterface
+	 * 
 	 */
 	
 public class PlayerMethods implements PlayerInterface{
@@ -66,30 +68,18 @@ public class PlayerMethods implements PlayerInterface{
 	}
 	
 	
-	/**
-	 * @return getFileName
-	 */
 	public String getFileName() {
 		return fileName;
 	}
 
-	/**
-	 * @param setFileName
-	 */
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
 	
-	/**
-	 * @return getMp3
-	 */
 	public MP3Player getMp3() {
 		return mp3;
 	}
-
-	/**
-	 * @param setMp3
-	 */
+	
 	public void setMp3(MP3Player mp3) {
 		this.mp3 = mp3;
 	}
