@@ -1446,12 +1446,12 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAFX+8SdOQQhsV0=",
+											"_id": "AAAAAAFYG67mxPtcOZI=",
 											"_parent": {
 												"$ref": "AAAAAAFX+8Re3QPnhAA="
 											},
 											"model": {
-												"$ref": "AAAAAAFX+8SdCQQbLaA="
+												"$ref": "AAAAAAFYG67miftWVzw="
 											},
 											"visible": true,
 											"enabled": true,
@@ -1468,7 +1468,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+textField;",
+											"text": "+frmMpPlayer;",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -1522,7 +1522,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "-initialize()",
+											"text": "+ViewClass()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -1550,7 +1550,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+actionPerformed openButton()",
+											"text": "-Gui()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -1578,7 +1578,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+actionPerformed playButton()",
+											"text": "+addComponents()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -1606,7 +1606,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+actionPerformed pauseButton()",
+											"text": "+addActionListeners()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -1634,7 +1634,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+actionPerformed stopButton()",
+											"text": "+actionPerformed()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										}
@@ -3241,15 +3241,14 @@
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAFX+8SdCQQbLaA=",
+							"_id": "AAAAAAFYG67miftWVzw=",
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "textField;",
+							"name": "frmMpPlayer;",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3265,8 +3264,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "initialize",
-							"visibility": "private",
+							"name": "ViewClass",
+							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
 							"concurrency": "sequential",
@@ -3279,8 +3278,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "actionPerformed openButton",
-							"visibility": "public",
+							"name": "Gui",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"concurrency": "sequential",
@@ -3293,7 +3292,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "actionPerformed playButton",
+							"name": "addComponents",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -3307,7 +3306,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "actionPerformed pauseButton",
+							"name": "addActionListeners",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -3321,7 +3320,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFX+8Re2gPfjfE="
 							},
-							"name": "actionPerformed stopButton",
+							"name": "actionPerformed",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
@@ -3378,6 +3377,7 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,

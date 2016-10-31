@@ -10,14 +10,11 @@ import jaco.mp3.player.MP3Player;
 	 * @author Rickard Berglund
 	 * @since 2016-10/27
 	 * @version 1.0
-	 * 
-	 * This package includes the class PlayerMethods that implements PlayerInterface
-	 * 
 	 */
 	
 public class PlayerMethods implements PlayerInterface{
 	
-	// Attributes, Mp3 instantiated as new object
+	// Attributes, Mp3 instantiated as a new object
 	private MP3Player mp3 = new MP3Player();
 	private String fileName = "";
 
